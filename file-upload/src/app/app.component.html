@@ -1,0 +1,75 @@
+
+<h4>Photo:</h4>
+<p style="color: red;">Document size: 10-200 KB </p>
+<div class="text-center">
+<input class="from-control" type="file"(change)="onChange($event)">
+
+<button (click)="onUpload()" class="btn btn-success">
+    Upload
+</button>
+</div>
+
+
+
+<h4>Caste Cetificate:</h4>
+<p style="color: red;"> Document size: 50-300 KB</p>
+<div class="text-center">
+<input class="from-control" type="file"(change)="onChange($event)">
+
+<button (click)="onUpload()" class="btn btn-success">
+    Upload
+</button>
+</div>
+
+
+
+<h4>Highest Qualification:</h4>
+<p style="color: red;">Document size: 50-300 KB</p>
+<div class="text-center">
+<input class="from-control" type="file"(change)="onChange($event)">
+
+<button (click)="onUpload()" class="btn btn-success">
+    Upload
+</button>
+</div>
+
+
+
+<h4>Adhar Card:</h4><p style="color: blue;">(If Adhar Card is available)</p>
+<p style="color:red"> Document size: 50-300 KB</p>
+<div class="text-center">
+<input class="from-control" type="file"(change)="onChange($event)">
+
+<button (click)="onUpload()" class="btn btn-success">
+    Upload
+</button>
+</div>
+
+
+
+<h4>Other Id Card:</h4><p style="color: blue;">(If Adhar Card is not available)</p>
+<p style="color: red;"> Document size: 50-300 KB</p>
+<div class="text-center">
+<input class="from-control" type="file"(change)="onChange($event)">
+
+<button (click)="onUpload()" class="btn btn-success">
+    Upload
+</button>
+</div>
+
+
+
+<div class="container text-center jumbotron"
+    *ngIf="shortLink">
+    <p style="color: seagreen;"> If document is Succesfully Link is given</p>
+    <a href="{{shortLink}}">{{shortLink}}</a>
+</div>
+
+<div class="container" *ngIf="loading">
+    <h3>Loading ...</h3>
+</div>
+
+
+
+
+    
